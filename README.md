@@ -70,7 +70,44 @@
 
 ## Kubernetes Features:
 > - Joe Beda
+>
 > Kubernetes is an open source project that enables software teams of all sizes, from small startup to a Fortune 100 company, to automate deploying, scaling, and managing applications on a group or cluster of server machines.
+
+### Multi-Host Container Scheduling:
+- Done by kube-schedular
+- Assign pods to nodes at runtime
+- Checks resources, qulality of service, policies, and user specifications before scheduling
+
+### Scalability and Availability:
+- Kubernetes master can be deployed in a highly available configuration
+- Multi-region deployments available
+
+#### Scalability (v1.17)
+- Supports 5000 node clusters
+- 150000 total pods
+- Maximum of 100 pods per node
+- Pods can be horizontally scaled via API
+
+### Flexibility and Modularizations:
+- Plug-and-play architecture
+- Extend architecture when needed
+- Add-ons: network drivers, service discovery, container runtime, visualization, and command
+
+### Registration:
+- Seamless nodes register themselves with master.
+
+### Service Discovery:
+- Automatic detection of services and endpoints via DNS or environment variables.
+
+### Persistent Storage:
+- Much requested and important feature when working with containers
+- Pods can use persistent volumes to store data
+- Data retained across pod restarts and crashes
+
+
+
+
+
 
 
 
