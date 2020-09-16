@@ -148,9 +148,26 @@
 3. A kube-proxy process running
 4. Supervisord
 
-> - Recommendation:
+> * Recommendation:
 >
 > If we are using Kubernetes in production, it is typically recommended to have at least a three-node cluster.
+
+#### Minikube:
+- Lightweight Kubernetes implementation that creates a VM on our local machine and deploys a simple cluster containing only one node.
+
+### Pod:
+- The simplest unit that we can intract with. We can create, deploy, and delete pods, and it represents one running process on our cluster.
+
+#### What's in the Pod?
+- Our Docker application container
+- Storage resources
+- Unique network IP
+- Options that govern how the container(s) should run
+
+
+
+
+
 
 
 
