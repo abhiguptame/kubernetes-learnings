@@ -177,6 +177,12 @@
 - Failed
 -  CrashLoopBackOff
 
+## Benefit of Controllers:
+- Application reliability
+- Scaling
+- Load balancing
+
+
 
 
 
