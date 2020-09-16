@@ -182,6 +182,34 @@
 - Scaling
 - Load balancing
 
+## Kinds of Controllers:
+- ReplicaSets
+- Deployments
+- DaemonSets
+- Jobs
+- Services
+
+### ReplicaSets:
+- Ensures that a specified number of replicas for a pod are running at all times.
+
+### Deployment:
+- A Deployment controller provides declarative updates for pods and ReplicaSets.
+
+#### Deployment Controller Use Cases:
+- Pod management: Running a ReplicaSets allows us to deploy a number of pods, and check their status as a single unit.
+- Scaling a ReplicaSet scalesout the pods, and alllows for the deployment to handle more traffic.
+- Pause and Resume: 
+-- Used with larger changesets
+-- Pause deployment, make changes, resume deployment
+
+
+
+
+
+
+
+
+
 
 
 
