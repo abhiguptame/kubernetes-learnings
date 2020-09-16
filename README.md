@@ -44,6 +44,13 @@
 1. Easy
 2. Repeatable
 
+## Container Benefits for DevOps:
+- Reliable deployments: improve speed and frequency of releases
+- Consistent application lifecycle: configure once and run multiple times
+- Consistent environment: No more process difference betweeen dev and production environments
+- Simple scaling: Fast deployments ease the addition of workers and permit workload to grow and shrink for on-demand use cases
+
+
 
 
 
