@@ -192,7 +192,7 @@
 ### ReplicaSets:
 - Ensures that a specified number of replicas for a pod are running at all times.
 
-### Deployment:
+### Deployments:
 - A Deployment controller provides declarative updates for pods and ReplicaSets.
 
 #### Deployment Controller Use Cases:
@@ -216,9 +216,14 @@
 - Supervisor process for pods carrying out batch jobs.
 - Run individual processes that run once and complete successfully.
 
-## Services:
+### Services:
 - Allow the communication between one set of deployments with another
 - Use a service to get pods in two deployments to talk to each other.
+
+#### Kinds of Services:
+- Internal: IP is only reachable within the cluster
+- External: endpoint available through node ip: port (called NodePort)
+- Load balancer: Exposes application to the internet with a load balancer (available with a cloud provider)
 
 
 
