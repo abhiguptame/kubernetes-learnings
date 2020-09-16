@@ -123,6 +123,26 @@
 - Mounted as data volumes or environment variables
 - Specific or namespace
 
+## Major Players in Container Orchestration:
+- Kubernetes
+- Docker Swarm
+- Rancher
+- Mesos
+
+### Cloud-specific Technologies:
+- Amazon EC2 Container Service
+- Google Anthos
+
+## When to go serverless:
+- Starting to build our infrastructure from scratch 
+- Running our infrastructure in cloud
+
+
+
+
+
+
+
 
 
 
