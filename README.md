@@ -137,10 +137,20 @@
 - Starting to build our infrastructure from scratch 
 - Running our infrastructure in cloud
 
+## Basic building blocks: Nodes and pods
 
+### Node:
+- The node serves as worker machine in a K8s cluster. One important thing to note is that the node can be a physical computer or a virtual machine.
 
+#### Node Requirements:
+1. A kubelet running
+2. Container tooling like Docker
+3. A kube-proxy process running
+4. Supervisord
 
-
+> - Recommendation:
+>
+> If we are using Kubernetes in production, it is typically recommended to have at least a three-node cluster.
 
 
 
