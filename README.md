@@ -164,6 +164,19 @@
 - Unique network IP
 - Options that govern how the container(s) should run
 
+#### Pods are:
+- Ephemeral, disposable
+- Never self-heal, and not restarted by the schedular by itself
+- Never create pods just by themselves
+- Always use higher-level constructs.
+
+#### Pod States:
+- Pending
+- Running
+- Succeeded
+- Failed
+-  CrashLoopBackOff
+
 
 
 
