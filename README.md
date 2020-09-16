@@ -68,23 +68,9 @@
 - Kubernetes is a container platform.
 - We can use Docker containers to develop and build applications, and then use kubernetes to run these applications on our infrastructure.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Kubernetes Features:
+> - Joe Beda
+> Kubernetes is an open source project that enables software teams of all sizes, from small startup to a Fortune 100 company, to automate deploying, scaling, and managing applications on a group or cluster of server machines.
 
 
 
