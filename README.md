@@ -199,16 +199,26 @@
 - Pod management: Running a ReplicaSets allows us to deploy a number of pods, and check their status as a single unit.
 - Scaling a ReplicaSet scalesout the pods, and alllows for the deployment to handle more traffic.
 - Pause and Resume: 
--- Used with larger changesets
--- Pause deployment, make changes, resume deployment
+1. Used with larger changesets
+2. Pause deployment, make changes, resume deployment
+- Status
+- Easy way to check the health of pods, and identify issues
 
+#### Replication Controller:
+- Early implementation of Deployments and ReplicaSets.
+- Use Deployments and ReplicaSets instead.
 
+### DeamonSets:
+- DaemonSets ensure that all nodes run a copy of a specific pod.
+- As nodes are added or removed from cluster, a DaemonSet will add or remove the required pods.
 
+### Jobs:
+- Supervisor process for pods carrying out batch jobs.
+- Run individual processes that run once and complete successfully.
 
-
-
-
-
+## Services:
+- Allow the communication between one set of deployments with another
+- Use a service to get pods in two deployments to talk to each other.
 
 
 
