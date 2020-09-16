@@ -104,7 +104,9 @@
 - Pods can use persistent volumes to store data
 - Data retained across pod restarts and crashes
 
-
+### Application Upgrades and Downgrades:
+- Upgrades: rolling updates supported
+- Downgrades: rollbacks are supported
 
 
 
