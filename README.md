@@ -108,8 +108,20 @@
 - Upgrades: rolling updates supported
 - Downgrades: rollbacks are supported
 
+### Maintenance:
+- Features are backward compatible
+- APIs are versioned
+- Turn off/on host during maintainance (unschedulable)
 
+### Logging and Monitoring:
+- Application monitoring built-in: TCP, HTTP or container execution healt check 
+- Node health check: Failures monitor by node controller
+- Kubernetes status: Add-ons (Heapster and cAdvisor)
+- Logging framework: In place or extensible
 
+### Secrets Management:
+- Mounted as data volumes or environment variables
+- Specific or namespace
 
 
 
