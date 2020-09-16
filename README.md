@@ -50,6 +50,32 @@
 - Consistent environment: No more process difference betweeen dev and production environments
 - Simple scaling: Fast deployments ease the addition of workers and permit workload to grow and shrink for on-demand use cases
 
+## Orchestrator Features:
+- Provision hosts
+- Instantiate containers on a host
+- Restart failing containers
+- Expose containers as services outside the cluster
+- Scale the cluster up or down 
+
+## Kubernetes (K8s):
+- Definition: An open-source platform designed to automate deploying, scaling, and operating containers
+
+- Goal: To foster and ecosystem of components and tools that relieve the burden of running applications in public and private clouds
+
+- Kubernetes is a platform to schedule and run containers on clusters of virtual machines. It runs on bare metal, virtual machines, private datacenter and public cloud.
+
+## Kubernetes and Docker:
+- Kubernetes is a container platform.
+- We can use Docker containers to develop and build applications, and then use kubernetes to run these applications on our infrastructure.
+
+
+
+
+
+
+
+
+
 
 
 
