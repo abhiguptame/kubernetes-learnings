@@ -257,20 +257,21 @@
 - Objects placed in "default" namespace at start
 - Newer applications install their resources in a different namespace
 
+## Kubelet and Kube-proxy:
 
+### Kubelet:
+- The Kubelet is the "Kubernetes node agent" that runs on each node
 
+#### Kubelet Roles:
+- Communication with API server to see if pods have been assigned to nodes
+- Executes pod containers via a container engine
+- Mounts and rund pod volumes and secrets
+- Executes health checks to identify pod/node status
 
-
-
-
-
-
-
-
-
-
-
-
+#### Kubelet and Podspec:
+- Podspec: YAML file that descibes a pod
+- The kubelet takes a set of Podspecs that are provided by the kube-apiserver and ensures that the containers described in those Podspecs are running and healthy
+- Kubelet only manages containers that were created by the API server, not any container running on the node
 
 
 
