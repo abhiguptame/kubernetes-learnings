@@ -257,7 +257,7 @@
 - Objects placed in "default" namespace at start
 - Newer applications install their resources in a different namespace
 
-## Kubelet and Kube-proxy:
+## Kubelet and kube-proxy:
 
 ### Kubelet:
 - The Kubelet is the "Kubernetes node agent" that runs on each node
@@ -272,6 +272,24 @@
 - Podspec: YAML file that descibes a pod
 - The kubelet takes a set of Podspecs that are provided by the kube-apiserver and ensures that the containers described in those Podspecs are running and healthy
 - Kubelet only manages containers that were created by the API server, not any container running on the node
+
+### kube-proxy:  The Network Proxy
+- Process that runs on all worker nodes
+- Reflects services as defined on each node, and can do simple network stram or round-robin forwarding across a set of backends
+- Service cluster IPs and ports are currently found through Docker --link compatible environment variables specifying port opened by the service proxy.
+
+#### Three Models of kube-proxy:
+1. User space mode
+2. Iptables mode
+3. Ipvs mode (alpha feature)
+
+#### Why These Models Are Important:
+- Services defined against the API server: kube-proxy watches the API server for the addition and removal of services
+- For each new service, kube-proxy opens a randomly chosen port on the local node
+- Connections made to the chosen port are proxied to one of the corresponding back-end pods
+
+
+
 
 
 
