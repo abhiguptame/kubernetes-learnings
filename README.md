@@ -225,6 +225,45 @@
 - External: endpoint available through node ip: port (called NodePort)
 - Load balancer: Exposes application to the internet with a load balancer (available with a cloud provider)
 
+## Labels, selectors, and namespaces:
+
+### Labels:
+- Labels are key/value pairs that are attached to objects like pods, services, and deployments.
+- Labels are for users of Kubernetes to identify attributes for objects.
+> Think about what our environment look like, and create a labeling hierarchy for it.
+
+#### Labels and Selectors:
+- Label selectors allow us to identify a set of objects.
+
+### Selectors:
+1. Equality-based
+2. Set-based
+
+#### Equality-based Selectors:
+- *=* , Two labels or values of labels should be equal
+- *!=*,  The values of the labels should not be equal
+
+#### Set-based Selectors:
+- IN: A value should be inside a set of defined values
+- NOTIN: A value should not be in a set of defined values
+- EXISTS: Determines whether a label exists or not
+
+### Namespaces:
+- Great for a large enterprises
+- Allows teams to access resources, with accountability
+- Great way to divide cluster resources between users
+- Provides scope for names-must be unique in the namespace
+- "Default" namespace created when we launch Kubernetes
+- Objects placed in "default" namespace at start
+- Newer applications install their resources in a different namespace
+
+
+
+
+
+
+
+
 
 
 
